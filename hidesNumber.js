@@ -6,3 +6,6 @@ const hideCard=(str)=>{
 
 console.lo(hideCard('visa 1234 3846 3947 0971'));
 //visa #### #### #### 0971
+
+//second method
+hideCard = s => s.slice(0,-4).replace(/\d/g,'#') + s.slice(-4)
